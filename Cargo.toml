@@ -1,7 +1,7 @@
 [package]
 name = "caber"
 author = "Gerald Nash (aunyks)"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
 
 about = "Embed binary data into JavaScript and TypeScript projects."

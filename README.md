@@ -12,7 +12,7 @@ cargo install caber --features cli
 
 ```shell
 > caber --help
-caber 0.1.0
+caber 0.1.1
 Gerald Nash (aunyks)
 Embed binary data into JavaScript and TypeScript projects.
 

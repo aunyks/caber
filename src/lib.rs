@@ -1,3 +1,4 @@
+#[cfg(feature = "cli")]
 use std::str::FromStr;
 use thiserror::Error;
 
@@ -25,7 +26,7 @@ impl Default for ExportMode {
     }
 }
 
-// #[cfg(feature = "cli")]
+#[cfg(feature = "cli")]
 impl FromStr for ExportMode {
     type Err = CaberError;
     fn from_str(s: &str) -> Result<Self, Self::Err> {
