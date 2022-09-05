@@ -61,5 +61,5 @@ export default binary;
 ```
 
 ## License
-Fair Source License, Version 0.9
+Fair Source License, Version 0.9  
 Copyright © 2022 Gerald Nash
