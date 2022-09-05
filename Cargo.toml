@@ -1,0 +1,30 @@
+[package]
+name = "caber"
+author = "Gerald Nash (aunyks)"
+version = "0.1.0"
+edition = "2021"
+
+about = "Embed binary data into JavaScript and TypeScript projects."
+description = "Embed binary data into JavaScript and TypeScript projects."
+license-file = "LICENSE"
+readme = "README.md"
+repository = "https://gitlab.com/aunyks/caber"
+keywords = ["ecmascript", "javascript", "typescript", "node", "deno"]
+categories = ["command-line-utilities"]
+
+
+[lib]
+name = "caber"
+path = "src/lib.rs"
+
+[[bin]]
+name = "caber"
+path = "src/bin.rs"
+required-features = ["cli"]
+
+[features]
+cli = ["clap"]
+
+[dependencies]
+clap = { version = "3.2.20", optional = true, features = ["derive"] }
+thiserror = { version = "1.0.34" }
